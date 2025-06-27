@@ -1,0 +1,174 @@
+/* ===== Reset default styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Global body style ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header and Navigation Bar ===== */
+.main-header {
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1300px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+   margin-left: -5px; /* 👈 Moves it 10px to the left */
+}
+.logo-white {
+  width: 170px;
+  height: 160px;
+   margin-left: -250px; /* 👈 Creates space from the first logo */
+}
+
+/* ===== Navigation Links ===== */
+.nav-links {
+  display: flex;
+  gap: 180px;
+}
+
+.nav-links a {
+  padding: 8px 16px;         /* Adds padding to make it look like a box */
+  border-radius: 8px;        /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth hover transition */
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links a:hover {
+  background-color: #15ca42;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: box effect */
+}
+
+.top-image {
+    padding: 0px;       /* Optional spacing */
+    text-align: left;    /* Start from the left */
+}
+
+.top-image img {
+    width: 1400px;        /* Set small width */
+    height: 120vh;        /* Maintain natural aspect ratio */
+    display: block;
+}
+
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 4%; /* now on the left */
+  transform: translateY(-50%) scale(0.8);
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  color: greenyellow;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: fadeInScale 2s ease-out forwards;
+}
+
+/* Animation keyframes */
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+h2 {
+  text-align: right;
+  margin: 40px 300px 30px auto;
+  font-size: 28px;
+  color: #1a3d2f;
+  text-decoration: underline;
+  font-family: 'Quicksand', sans-serif;
+}
+.about-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.about-image {
+    padding: 0px;       /* Optional spacing */
+    text-align: left;    /* Start from the left */
+}
+
+.about-image img {
+    width: 100vh;        /* Set small width */
+    height: 70vh;        /* Maintain natural aspect ratio */
+    display: block;
+}
+
+/* Right side: Description text */
+.about-description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3em;
+  color: #2a2a2a;
+  line-height: 1.5;
+  max-width: 700px;
+}
+.about-description strong {
+  color: #1a3d2f;
+  font-weight: 700;
+}
+ 
+.gas-title {
+  text-align: left;
+  margin-left: 250px;           /* 👈 Adjust this value as needed */
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a3d2f;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+
+.gas-item {
+  text-align: center;         /* Center contents inside */
+  margin: 0 auto;             /* Center the .gas-item itself if needed */
+}
+
+.gas-item img {
+  display: block;             /* Ensures margin auto works */
+  margin: 0 auto;             /* Horizontally center the image */
+  width: 300px;               /* Adjust to desired size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.affordable-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: #e91e63;            /* A vibrant pink/red */
+  text-align: center;
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}

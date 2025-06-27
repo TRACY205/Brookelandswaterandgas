@@ -1,0 +1,246 @@
+/* ===== Reset default styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Global body style ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header and Navigation Bar ===== */
+.main-header {
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1300px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.logo-white {
+  width: 170px;
+  height: 160px;
+    margin-left: -200px; /* 👈 Creates space from the first logo */
+}
+
+/* ===== Navigation Links ===== */
+.nav-links {
+  display: flex;
+  gap: 180px;
+}
+
+.nav-links a {
+  padding: 8px 16px;         /* Adds padding to make it look like a box */
+  border-radius: 8px;        /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth hover transition */
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links a:hover {
+  background-color: #15ca42;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: box effect */
+}
+
+.top-image {
+    padding: 0px;       /* Optional spacing */
+    text-align: left;    /* Start from the left */
+}
+
+.top-image img {
+    width: 1400px;        /* Set small width */
+    height: 20vh;        /* Maintain natural aspect ratio */
+    display: block;
+}
+
+
+
+.overlay-text {
+  position: absolute;
+  top: 60%;
+  left: 5%; /* now on the left */
+  transform: translateY(-50%) scale(0.8);
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  color: greenyellow;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: fadeInScale 2s ease-out forwards;
+
+
+}
+
+/* Animation keyframes */
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+/* ===== Page Heading ===== */
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 28px;
+  color: #1a3d2f;
+}
+.get-in-touch {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 50px; /* Adjust this value for more or less space */
+  color: #0b8140;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+/* Reset default margin/padding */
+* {
+  margin: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Overall page styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  padding: 60px 60px;
+}
+
+/* Contact container: horizontal flex layout */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 90px; /* ✅ Moves the whole row of boxes downward */
+}
+
+/* Each contact box */
+.contact-box {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.contact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Icon styling */
+.contact-box i {
+  font-size: 1.3em;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+/* Text inside box */
+.contact-box p {
+  font-size: 0.3em;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Links inside box */
+.contact-box a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== Footer Section ===== */
+.footer {
+  background: rgba(22, 54, 34, 0.95);
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+.logo-small {
+  width: 80px !important;
+  height: auto !important;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-column p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #dcdcdc;
+}
+
+.footer-column i {
+  margin-right: 10px;
+  color: #1da1f2;
+}
+
+.logo-small {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-column a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
