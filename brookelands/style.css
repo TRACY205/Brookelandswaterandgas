@@ -331,45 +331,48 @@ html, body {
     font-size: 18px;
 }
 
-
 /* Responsive: All mobile-specific styles in one place */
+/* Your desktop styles (default) are already correct. */
+/* To ensure ONLY phone screens are affected, make all overrides inside this block: */
+
 @media (max-width: 768px) {
+  /* Header */
   .main-header {
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
   }
 
   .logo,
   .logo-white {
-    width: 120px;
+    width: 100px;
   }
 
+  /* Nav bar */
   .nav-links {
-    flex-direction: row;        /* ✅ Horizontal on phone */
-    justify-content: center;    /* ✅ Centered on phone */
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     padding: 10px 0;
   }
 
   .nav-links a {
-    font-size: 0.9em;           /* ✅ Smaller font */
-    letter-spacing: 1px;        /* ✅ Space between letters */
-    padding: 6px 10px;
+    font-size: 0.85em;
+    padding: 5px 10px;
   }
 
+  /* Top image */
   .top-image img {
-    height: 40vh;               /* ✅ Smaller top image */
+    height: 40vh;
   }
 
   .image-text {
-    top: 30%;
-    left: 5%;
+    top: 25%;
     font-size: 0.9em;
   }
 
   .line-drink {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 
   .line-self {
@@ -384,21 +387,43 @@ html, body {
     display: inline-block;
   }
 
+  /* Gas Items in twos */
   .gas-section {
     justify-content: center;
   }
 
   .gas-item {
-    flex: 0 0 45%;              /* ✅ Two items per row */
+    flex: 0 0 45%;
     max-width: 45%;
     margin-bottom: 20px;
   }
 
+  .gas-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer layout */
   .footer-container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
   }
 }
+
+/* ✅ Don't change anything outside this media query block. That keeps desktop styles intact. */
+
+
+   
+  
+
+ 
 
 
 
