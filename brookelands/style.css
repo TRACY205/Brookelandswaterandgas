@@ -331,54 +331,63 @@ html, body {
     font-size: 18px;
 }
 
-/* Responsive: All mobile-specific styles in one place */
-/* Your desktop styles (default) are already correct. */
-/* To ensure ONLY phone screens are affected, make all overrides inside this block: */
 
-@media (max-width: 768px) {
-  /* Header */
+  @media (max-width: 768px) {
+  /* Stack header items vertically */
   .main-header {
     flex-direction: column;
-    padding: 15px;
+    align-items: center;
+    padding: 20px;
   }
 
+  /* Resize logos */
   .logo,
   .logo-white {
-    width: 100px;
+    width: 140px;
+    height: auto;
+    margin-bottom: 10px;
   }
 
-  /* Nav bar */
+  /* Arrange nav links vertically */
   .nav-links {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10px;
   }
 
   .nav-links a {
-    font-size: 0.85em;
-    padding: 5px 10px;
+    font-size: 1em;
+    padding: 8px 16px;
+    letter-spacing: 1px;
+    text-align: center;
   }
 
-  /* Top image */
+  /* Reduce top image height */
   .top-image img {
     height: 40vh;
   }
 
+  /* Ensure text stays visible on image */
   .image-text {
-    top: 25%;
-    font-size: 0.9em;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    font-size: 1em;
+    transform: none;
+    opacity: 1;
   }
 
   .line-drink {
-    font-size: 2.2em;
+    font-size: 2.5em;
   }
 
   .line-self {
     font-size: 1.5em;
   }
 
+  /* Adjust gas box */
   .gas-box {
     position: relative;
     top: auto;
@@ -387,14 +396,16 @@ html, body {
     display: inline-block;
   }
 
-  /* Gas Items in twos */
+  /* Display gas items in two per row */
   .gas-section {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
   }
 
   .gas-item {
-    flex: 0 0 45%;
-    max-width: 45%;
+    width: 48%;
+    max-width: 48%;
     margin-bottom: 20px;
   }
 
@@ -403,7 +414,7 @@ html, body {
     height: auto;
   }
 
-  /* Footer layout */
+  /* Stack footer content */
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -412,15 +423,12 @@ html, body {
 
   .footer-column {
     width: 100%;
-    max-width: 300px;
-    margin-bottom: 20px;
+    max-width: 90%;
+    margin: 10px 0;
   }
 }
 
-/* ✅ Don't change anything outside this media query block. That keeps desktop styles intact. */
-
-
-   
+    
   
 
  
